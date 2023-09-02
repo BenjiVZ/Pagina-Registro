@@ -1,0 +1,19 @@
+Tabla: notas
+ID	Materia	Nombre	Apellido	Nota1	Nota2	Nota3	Nota4	Nota5	Nota Final
+1	Matematicas	benjamin	velazco	12	12	12	12	12	12
+2	Ciencias	Maria	toro	13	13	13	13	13	13
+3	LenguaLiteratura	benjamin	velazco	13	13	13	13	13	13
+4	Historia	Maria	toro	13	12	12	13	12	12.4
+5	Ingles	benjamin	velazco	13	13	13	13	13	13
+7	Matematicas	Maria	toro	11	11	11	11	11	11
+8	Matematicas	hola	manzano	13	13	12	12	12	12.4
+
+Tabla: estudiantes
+ID	Nombre	Apellido	Edad
+1	benjamin	velazco	32
+2	Maria	velazco	35
+
+Tabla: profesores
+ID	Nombre	Apellido	Materia
+1	benjamin	23444	Matematicas
+2	hola	toro	Lengua y Literatura

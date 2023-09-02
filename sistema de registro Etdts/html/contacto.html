@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto</title>
+    <style>
+        /* Estilos para el mapa */
+        #map {
+            height: 400px;
+            width: 100%;
+        }
+    </style>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body id="contacto">
+    <header>
+        <div class="section1">
+            <h2>Ubicación</h2>
+            <p>Nuestra sede está ubicada en:</p>
+            <address>
+                Calle Principal, #123<br>
+                Ciudad XYZ<br>
+                País ABC
+            </address>
+        </div>
+        <div class="section2">
+            <!-- Mapa incorporado utilizando Google Maps -->
+            <h2>Mapa</h2>
+            <div id="map"></div>
+            <script>
+                function initMap() {
+                    var location = { lat: 10.512769, lng: -66.908401 }; // Cambia las coordenadas a la ubicación deseada
+                    var map = new google.maps.Map(document.getElementById('map'), {
+                        zoom: 15,
+                        center: location
+                    });
+                    var marker = new google.maps.Marker({
+                        position: location,
+                        map: map
+                    });
+                }
+            </script>
+            <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&callback=initMap" async
+                defer></script>
+            <!-- Reemplaza YOUR_API_KEY con tu clave de API de Google Maps -->
+        </div>
+    </header>
+
+    <main>
+        <h1>Contacto</h1>
+        <p>¡Bienvenido a nuestra página de "Contacto"! Aquí encontrarás la información necesaria para ponerte en
+            contacto
+            con nosotros.</p>
+        <h2>Información de Contacto</h2>
+        <p>Puedes comunicarte con nosotros de las siguientes maneras:</p>
+        <ul>
+            <li>Correo Electrónico: <a href="mailto:info@sysbenji.com">info@sysbenji.com</a></li>
+            <li>Número de Teléfono: +1234567890</li>
+            <li>Redes Sociales:
+                <ul>
+                    <li><a href="https://www.facebook.com/sysbenji">Facebook</a></li>
+                    <li><a href="https://www.twitter.com/sysbenji">Twitter</a></li>
+                    <li><a href="https://www.instagram.com/sysbenji">Instagram</a></li>
+                </ul>
+            </li>
+        </ul>
+    </main>
+
+    <footer>
+        <p>Enlace de regreso a la página de inicio: <a href="../index.html">Inicio</a></p>
+    </footer>
+</body>
+
+</html>
